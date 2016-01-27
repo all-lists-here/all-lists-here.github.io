@@ -13,12 +13,12 @@
 
             .selectAll("td")
                 .data(
-                    function(d) { 
+                    function(d, i, a) { 
                         return d; 
                         
                     }).enter()
                 .append("td")
-                .text(function(d1) { 
+                .text(function(d1, i1, a1) { 
                     return d1; 
                 });
     });
