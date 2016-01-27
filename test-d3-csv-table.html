@@ -12,8 +12,14 @@
                 .append("tr")
 
             .selectAll("td")
-                .data(function(d) { return d; }).enter()
+                .data(
+                    function(d) { 
+                        return d; 
+                        
+                    }).enter()
                 .append("td")
-                .text(function(d) { return d; });
+                .text(function(d1) { 
+                    return d1; 
+                });
     });
 </script>
